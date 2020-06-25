@@ -1,26 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Main from './components/Main';
+
 
 function App() {
-  return (
+  // const [input, setinput] = useState("")
+  // const [items, setItems] = useState([])
+  // const itemInput = (e) => {
+  //   setinput(e.target.value)
+  // }
+  // const listOfItems = () => {
+  //   setItems(oldItems => {
+  //     return [...oldItems, input];
+  //   });
+  //   setinput("")
+  // }
+  // return (
+  //   <div className="main_div">
+  //     <div className="center_div">
+  //       <br/>
+  //       <h1>To Do List</h1>
+  //       <br/>
+  //       <input type="text" placeholder="Add a Items" value={input} onChange={itemInput}/>
+  //       <button onClick={listOfItems}>+</button>
+  //       <ol>
+  //         {items.map((item)=> {
+  //           <ToDoList text={item}/>
+  //         })}
+  //       </ol>
+  //     </div>
+      
+  //   </div>
+  // );
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Main />
+  </div>
+  )
+
 }
 
 export default App;
